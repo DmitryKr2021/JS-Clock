@@ -186,6 +186,9 @@ function showTime() {
     if (rt < 0) {
       rt += 24;
     }
+    if (rt > 24) {
+      rt -= 24;
+    }
     rt = rt + rTime.slice(2);
     realTime.textContent = rt;
   }, 1000);
@@ -208,6 +211,9 @@ function showTime() {
   let nowTime = now.getHours() + correct;
   if (nowTime < 0) {
     nowTime += 24;
+  }
+  if (nowTime > 24) {
+    nowTime -= 24;
   }
 
   switch (true) {
