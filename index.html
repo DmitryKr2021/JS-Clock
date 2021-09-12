@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Clock</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+  <audio class="audio" src="Time.mp3" controls></audio>
+    <div class="choose-city">
+      <div class="city city_0">
+        <div class="overlay">
+          <h2 class='city_name'>London</h2>
+        </div>
+      </div>
+
+      <div class="city city_1">
+        <div class="overlay">
+          <h2 class='city_name'>Minsk</h2>
+        </div>
+      </div>
+
+      <div class="city city_2">
+        <div class="overlay">
+          <h2 class='city_name'>Moscow</h2>
+        </div>
+      </div>
+
+      <div class="city city_3">
+        <div class="overlay">
+          <h2 class='city_name'>New-York</h2>
+        </div>
+      </div>
+
+      <div class="city city_4">
+        <div class="overlay">
+          <h2 class='city_name'>Paris</h2>
+        </div>
+      </div>
+
+      <div class="city city_5">
+        <div class="overlay">
+          <h2 class='city_name'>Pekin</h2>
+        </div>
+      </div>
+
+      <div class="city city_6">
+        <div class="overlay">
+          <h2 class='city_name'>Roma</h2>
+        </div>
+      </div>
+
+      <div class="city city_7">
+        <div class="overlay">
+          <h2 class='city_name'>Tokio</h2>
+        </div>
+      </div>
+    </div><!--/choose-city-->
+ 
+    <div class="clockface">
+      <ul class="clocks"></ul>
+      <div class="axis"></div>
+      <div class="second"></div>
+      <div class="minute"></div>
+      <div class="hour"></div>
+      <div class="link__ico rs_logo">
+        <img src="img/rs_school_js.svg" alt="#">
+      </div>
+      <div class="watch">
+        <div class="real-time"></div>
+        <div class="hello"></div>
+      </div>
+       
+    </div><!--/clockface-->
+<div class="calendar">
+  <div class="month-day"></div>
+  <div class="week-day"></div>
+  <div class="charts">
+    <div class="chart__second chart"></div>
+    <div class="chart__min chart"></div>
+    <div class="chart__hour chart"></div>
+    <div class="center"></div> 
+  </div>
+</div>
+
+  </div><!--/container-->
+  <script src="script.js"></script>
+</body>
+</html>
